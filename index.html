@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <!-- Include Three.js library -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="asset/css/base.css">
+<link rel="stylesheet" href="asset/css/cursor.css">
+<link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+
+  <header>
+    <div class="container">
+  
+      <div class="header-wrap"> 
+        <div class="logo">
+          <img src="./asset/image/logo.png" alt="Logo" >  
+        </div>
+        <div class="header-menu">
+
+          <ul>
+            <li>
+              <a href="http://">home </a>              
+            </li>
+            <li>
+              <a href="http://"> About</a>              
+            </li>
+            <li>
+              <a href="http://">Art </a>              
+            </li>
+            <li>
+              <a href="http://">Contact us </a>              
+            </li>
+            <li>
+              <a href="http://"> IMDB </a>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<section class="banner-section ">
+<div class="container">
+  
+
+</div>
+
+</section>
+ 
+<!-- <section class=" intro-section">
+  <div class="container">
+  <div>
+<img src="" alt="" srcset="">
+  </div>
+  <div>
+    
+  </div>
+  <h1> KEYUR PANCHAL
+    CREATIVE DIRECTOR
+    DESIGNER
+    FILMMAKER
+    & VISUAL ARTIST.
+    I CREATE IMMERSIVE
+    EXPERIENCES,
+    SEAMLESSLY
+    BLENDING ART AND
+    NARRATIVE TO
+    INSPIRE DEEP
+    BRAND LOYALTY.
+  </h1>
+
+  </div>
+</section> -->
+
+<section class="project-section">
+  <div class="container">
+   <!-- Swiper -->
+ <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> 
+      <div class="project-wrap ">
+        <div class="project-image">
+          <figure>
+            <img src="asset/image/Hero-Image.jpg" alt="" srcset="">
+          </figure>
+        </div>
+        <div class="projct-info">
+          <h2>
+            PROJECT NAME
+          </h2>
+          <p>PROJECT DESCRIPTION </p>
+          <button class="btn-primary">HASTAGS</button>
+        </div>
+  
+      </div>
+      <div class="project-wrap direction-wrap">
+        <div class="project-image">
+          <figure>
+            <img src="asset/image/Hero-Image.jpg" alt="" srcset="">
+          </figure>
+        </div>
+        <div class="projct-info">
+          <h2>
+            PROJECT NAME
+          </h2>
+          <p>PROJECT DESCRIPTION </p>
+          <button class="btn-primary">HASTAGS</button>
+        </div>
+  
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="project-wrap">
+        <div class="project-image">
+          <figure>
+            <img src="asset/image/Hero-Image.jpg" alt="" srcset="">
+          </figure>
+        </div>
+        <div class="projct-info">
+          <h2>
+            PROJECT NAME
+          </h2>
+          <p>PROJECT DESCRIPTION </p>
+          <button class="btn-primary">HASTAGS</button>
+        </div>
+  
+      </div>
+
+      <div class="project-wrap direction-wrap">
+        <div class="project-image">
+          <figure>
+            <img src="asset/image/Hero-Image.jpg" alt="" srcset="">
+          </figure>
+        </div>
+        <div class="projct-info">
+          <h2>
+            PROJECT NAME
+          </h2>
+          <p>PROJECT DESCRIPTION </p>
+          <button class="btn-primary">HASTAGS</button>
+        </div>
+  
+      </div>
+
+    </div>   
+  </div>
+  <!-- <div class="swiper-pagination"></div> -->
+</div>
+    
+  </div>
+</section> 
+
+ 
+
+
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+<script src="asset/js/cursor.js"></script>
+<script src="https://threejs.org/build/three.js"></script>
+<script src="asset/js/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    speed: 3350,
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<!-- 3D -->
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+    }
+  }
+</script>
+<script type="module" src="asset/js/3d.js"></script>
+</body>
+</html>
